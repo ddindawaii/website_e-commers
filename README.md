@@ -1,2 +1,2 @@
 # website_e-commers
-berfokus pada html
+berfokus pada Html dan Css
