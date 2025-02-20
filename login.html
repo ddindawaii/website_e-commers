@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CORKCICLE</title>
+
+    <style>
+      body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .header {
+            width: 100vw;
+            background-color: #000000;
+            padding: 10px 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            padding-left: 50px; 
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            max-width: 1400px; 
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start; 
+        }
+        .background-image {
+            width: 80%; 
+            height: auto;
+        }
+
+        .login-form {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .login-container {
+            background: rgb(253, 253, 253);
+            padding: 25px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+       
+        .login-container input {
+            width: 100%;
+            padding: 6px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login-container button {
+            width: 104%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background: darkgray;
+        }
+
+        .login-container p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-container a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        CORKCICLE
+        </div>
+        <div class="container">
+            <img alt="background corkcicle" class="background-image" height="400" src="images/bg login 2.webp" width="800"/>
+            <div class="login-form">
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                 <div style="background-color: #080706; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-right: 10px;">
+                  C
+                 </div>
+                 <div style="font-size: 18px; color: #000000;">
+                  Corkcicle
+                 </div>
+                </div>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="home.html">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+    </div>
+
+</body>
+</html>

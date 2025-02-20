@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMMUTER SPORT - Detail Produk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+        }
+
+        .header-top {
+            background: #000;
+            color: white;
+            text-align: left;
+            padding: 15px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px;
+            background: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .product-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            gap: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-images {
+            flex: 1;
+        }
+
+        .main-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-title {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .rating {
+            color: #ffd700;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .reviews {
+            color: #666;
+        }
+
+        .price {
+            font-size: 28px;
+            color: #e44d26;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .description {
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .features {
+            margin: 20px 0;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .features ul {
+            padding-left: 20px;
+        }
+
+        .features li {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-top">
+       CORKCICLE
+    </div>
+
+    <a href="../product.html" class="back-button">← Kembali</a>
+
+    <div class="product-container">
+        <div class="product-images">
+            <img src="../images/produk 8.webp" alt="COMMUTER SPORT" class="main-image">
+            <div class="thumbnail-container">
+                <img src="../images/produk 2.webp" alt="Thumbnail 1" class="thumbnail">
+                <img src="../images/produk 5.webp" alt="Thumbnail 2" class="thumbnail">
+                <img src="../images/produk 8.webp" alt="Thumbnail 3" class="thumbnail">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1 class="product-title">COMMUTER SPORT</h1>
+            <div class="rating">
+                ★★★★☆ <span class="reviews">(178 reviews)</span>
+            </div>
+            <p class="price">Rp 967.000</p>
+            
+            <div class="description">
+                <p>Commuter Sport adalah botol minum berwarna pink yang dirancang khusus untuk pengguna dengan mobilitas tinggi. Dengan desain yang ergonomis dan fitur-fitur unggulan, botol ini sangat cocok untuk pelari, pengendara sepeda, atau siapa saja yang sering bepergian. Terbuat dari material berkualitas tinggi, botol ini mampu menjaga suhu minuman agar tetap segar dalam jangka waktu lama.</p>
+            </div>
+
+            <div class="features">
+                <h3>Fitur Produk:</h3>
+                <ul>
+                    <li>Kapasitas: 850ml</li>
+                    <li>Material: Stainless Steel dengan lapisan powder-coated</li>
+                    <li>insulasi tiga lapis untuk menjaga suhu lebih maksimal</li>
+                    <li>Tahan hingga 18 jam untuk minuman dingin dan 10 jam untuk minuman panas</li>
+                    <li>Warna pink cerah dengan desain sporty yang trendy</li>
+                    <li>Dilengkapi dengan pegangan silikon untuk kemudahan saat dibawa</li>
+                    <li>Desain anti-tumpah</li>
+                    <li>Cocok untuk aktivitas outdoor seperti gym,hiking, dan perjalanan jauh</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

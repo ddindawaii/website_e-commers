@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT CORKCICLE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header dengan Nama Toko */
+        .header-top {
+            background: #000000;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f8f8f8; /* Warna latar saat gambar loading */
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Navbar Rata Kanan */
+        nav {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            flex-shrink: 0;
+        }
+
+        details {
+            margin-bottom: 10px;
+        }
+
+        /* Content (Produk) */
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            flex-grow: 1;
+        }
+
+        /* Styling produk */
+        .product {
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            color: #333;
+            margin: 10px 0 5px;
+            font-size: 1.1em;
+        }
+
+        .product .price {
+            font-size: 1.2em;
+            color: #e44d26;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        /* Styling untuk rating bintang */
+        .rating {
+            color: #ffd700;
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .reviews {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+          /* Footer */
+          footer {
+            text-align: center;
+            padding: 20px;
+            background: #000000;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .content {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Nama Toko -->
+    <div class="header-top">
+    CORKCICLE
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="assets/banner.webp" alt="Banner">
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Filter</h2>
+            <details>
+                <summary>Color</summary>
+                <label><input type="checkbox"> Pink</label>
+                <br>
+                <label><input type="checkbox"> Blue</label>
+                <br>
+                <label><input type="checkbox"> Unicorn</label>
+            </details>
+            <details>
+                <summary>Collection</summary>
+                <label><input type="checkbox"> Limited Edition</label>
+            </details>
+            <details>
+                <summary>Size</summary>
+                <label><input type="checkbox"> 30oz</label>
+                <br>
+                <label><input type="checkbox"> 32oz</label>
+                <br>
+                <label><input type="checkbox"> 36oz</label>
+                <br>
+                <label><input type="checkbox"> 40oz</label>
+                <br>
+            </details>
+        </aside>
+
+        <!-- Produk -->
+        <main class="content">
+            <div class="product">
+                <a href="product-detail/produk 1.html">
+                    <img src="images/produk 1.webp" alt="DISNEY PRINCESS COLD CUP">
+                    <h3>DISNEY PRINCESS COLD CUP</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(128)</span>
+                    </div>
+                    <p class="price">Rp 965.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 2.html">
+                    <img src="images/produk 2.webp" alt="PINK CUP XL">
+                    <h3>PINK CUP XL</h3>
+                    <div class="rating">
+                        ★★★★☆
+                        <span class="reviews">(95)</span>
+                    </div>
+                    <p class="price">Rp 980.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 3.html">
+                    <img src="images/produk 3.webp" alt="COLD CUP">
+                    <h3>COLD CUP</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(256)</span>
+                    </div>
+                    <p class="price">Rp 845.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 4.html">
+                    <img src="images/produk 4.webp" alt="CRUISER">
+                    <h3>CRUISER</h3>
+                    <div class="rating">
+                        ★★★★☆
+                        <span class="reviews">(167)</span>
+                    </div>
+                    <p class="price">Rp 1.086.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 5.html">
+                    <img src="images/produk 5.webp" alt="RIFLE PAPER CO. CRUISER">
+                    <h3>RIFLE PAPER CO. CRUISER</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(189)</span>
+                    </div>
+                    <p class="price">Rp 1.207.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 6.html">
+                    <img src="images/produk 6.webp" alt="UNICORN MAGIC SPORT CANTEEN">
+                    <h3>UNICORN MAGIC SPORT CANTEEN</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(234)</span>
+                    </div>
+                    <p class="price">Rp 965.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 7.html">
+                    <img src="images/produk 7.webp" alt="Produk 7">
+                    <h3>COLD CUP XL</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(145)</span>
+                    </div>
+                    <p class="price">Rp 1.086.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 8.html">
+                    <img src="images/produk 8.webp" alt="Produk 8">
+                    <h3>COMMUTER SPORT</h3>
+                    <div class="rating">
+                        ★★★★☆
+                        <span class="reviews">(178)</span>
+                    </div>
+                    <p class="price">Rp 967.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 9.html">
+                    <img src="images/produk 9.webp" alt="Produk 9">
+                    <h3>CHEETOS X CORKCICLE CRUISER</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(203)</span>
+                    </div>
+                    <p class="price">Rp 1.207.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 10.html">
+                    <img src="images/produk 10.webp" alt="Produk 10">
+                    <h3>UNICORN MAGIC TUMBLER</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(167)</span>
+                    </div>
+                    <p class="price">Rp 724.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 11.html">
+                    <img src="images/mug 1.webp" alt="Star Wars Coffee Mug">
+                    <h3>Star Wars™ Coffee Mug</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(95)</span>
+                    </div>
+                    <p class="price">Rp  585.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 12.html">
+                    <img src="images/mug3.webp" alt="Classic Coffee Mug">
+                    <h3>Classic Coffee Mug</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(167)</span>
+                    </div>
+                    <p class="price">Rp 852.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 13.html">
+                    <img src="images/mug 4.webp" alt="Harry Potter Coffee Mug">
+                    <h3>Harry Potter Coffee Mug</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(167)</span>
+                    </div>
+                    <p class="price">Rp 974.000</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product-detail/produk 14.html">
+                    <img src="images/mug 5.webp" alt="Rifle Paper Co. Coffee Mug">
+                    <h3>Rifle Paper Co. Coffee Mug</h3>
+                    <div class="rating">
+                        ★★★★★
+                        <span class="reviews">(167)</span>
+                    </div>
+                    <p class="price">Rp 974.000</p>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CORKCICLE. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a> |
+            <a href="terms.html">Terms & Conditions</a> |
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body>
+</html>

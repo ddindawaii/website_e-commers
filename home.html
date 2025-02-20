@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+        .header-top {
+            background: #000000;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f8f8f8;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Navbar */
+        nav {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            flex-shrink: 0;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 5px;
+        }
+        details {
+            margin-bottom: 10px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+        .product-grid {
+            display: flex;
+            gap: 20px
+        }
+        .product-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            width: 30%;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .review {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #000;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000000;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Nama Toko -->
+    <div class="header-top">
+        CORKCICLE
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="assets/banner.webp" alt="Banner">
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Filter</h2>
+            <details>
+                <summary>Color</summary>
+                <label><input type="checkbox"> Pink</label>
+                <br>
+                <label><input type="checkbox"> Blue</label>
+                <br>
+                <label><input type="checkbox"> Unicorn</label>
+            </details>
+            <details>
+                <summary>Collection</summary>
+                <label><input type="checkbox"> Limited Edition</label>
+            </details>
+            <details>
+                <summary>Size</summary>
+                <label><input type="checkbox"> 30oz</label>
+                <br>
+                <label><input type="checkbox"> 32oz</label>
+                <br>
+                <label><input type="checkbox"> 36oz</label>
+                <br>
+                <label><input type="checkbox"> 40oz</label>
+                <br>
+            </details>
+        </aside>
+
+        <!-- Content -->
+        <div class="content">
+            
+            <div class="section">
+                <h2>Selamat Datang di CORKCICLE</h2>
+                <p>
+                    CORKCICLE menghadirkan botol minum berkualitas tinggi yang dirancang dengan teknologi canggih 
+                    untuk menjaga suhu minuman lebih lama. Dengan desain modern dan pilihan warna elegan, produk ini cocok digunakan sehari-hari, baik untuk bekerja, berolahraga, maupun traveling.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Keunggulan Produk</h2>
+                <ul>
+                    <li>✅ Menjaga minuman tetap dingin hingga 25 jam.</li>
+                    <li>✅ Menjaga minuman tetap panas hingga 12 jam.</li>
+                    <li>✅ Terbuat dari stainless steel bebas BPA.</li>
+                    <li>✅ Desain ergonomis dan mudah dibawa.</li>
+                    <li>✅ Berbagai ukuran dan warna tersedia.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Produk Kami</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <a href="product.html">
+                        <img src="images/prodkam1.webp" alt="Botol Minum 1">
+                        </a>
+                        <h3>Corkcicle Sport Canteen</h3>
+                        <p>Botol sport premium dengan desain modern.</p>
+                    </div>
+                    <div class="product-card">
+                        <a href="product.html">
+                        <img src="images/prodkam2.webp" alt="Botol Minum 2">
+                        </a>
+                        <h3>Corkcicle Tumbler</h3>
+                        <p>Tumbler keren dengan insulasi ganda.</p>
+                    </div>
+                    <div class="product-card">
+                        <a href="product.html">
+                        <img src="images/mug 2.webp" alt="Botol Minum 3">
+                        </a>
+                        <h3>Corkcicle Coffee Mug</h3>
+                        <p>Mug kopi stylish untuk minuman panas Anda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Review Pelanggan</h2>
+                <div class="review">
+                    <p><strong>⭐️⭐️⭐️⭐️⭐️ - Amel carla</strong></p>
+                    <p>“Botolnya keren banget! Minuman tetap dingin seharian.”</p>
+                </div>
+                <div class="review">
+                    <p><strong>⭐️⭐️⭐️⭐️ - Jefri nichol</strong></p>
+                    <p>“Desainnya elegan, cocok buat kerja dan olahraga.”</p>
+                </div>
+                <div class="review">
+                    <p><strong>⭐️⭐️⭐️⭐️⭐️ - Jungkook</strong></p>
+                    <p>“Bahan berkualitas dan nyaman dipegang. Worth it banget!”</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer>
+        <p>&copy; 2025 CORKCICLE. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a> |
+            <a href="terms.html">Terms & Conditions</a> |
+            <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </footer>
+    </body>
+</html>
+
+  
